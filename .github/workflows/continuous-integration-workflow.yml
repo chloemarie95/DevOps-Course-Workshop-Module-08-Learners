@@ -38,9 +38,9 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    name: Publish to Docker hub -test
+    name: Publish to Docker hub -tes
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
