@@ -7,8 +7,6 @@ RUN apt-get install curl -yq
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
-# copy csproj and restore as distinct layers
-COPY *.csproj .
 # copy and publish app and libraries
 COPY . .
 RUN dotnet build
